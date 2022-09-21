@@ -1,5 +1,15 @@
 ## Analysis of thermal curves
 
+### Install rTPC package
+```
+download and install devtools executable from CRAN
+Run install.packages("devtools") in R
+library(devtools)
+install_github("padpadpadpad/rTPC")
+
+Should work if R >4.2
+```
+
 ### Preparing data for analysis
 ```
 library(rTPC)
