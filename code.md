@@ -1,3 +1,7 @@
+## Analysis of thermal curves
+
+### Preparing data for analysis
+```
 library(rTPC)
 library(devtools)
 library(nls.multstart)
@@ -50,7 +54,10 @@ unique(family__counts$family)
 
 View(family__counts)
 write.table(family__counts, "temp_family_counts.txt", quote=F, row.names = F, sep="\t")
+```
 
+### Analyze data/plot
+```
 # write function to label ggplot2 panels
 label_facets_num <- function(string){
   len <- length(string)
@@ -58,6 +65,7 @@ label_facets_num <- function(string){
   return(string)
 }
 
+#this is optional, comment out if not needed
 #test all models on one strain
 #select one strain
 d <- filter(Corkrey__data, strain.code == 3)
@@ -327,3 +335,4 @@ ggplot(d_preds, aes(temp, rate)) +
        y = 'Metabolic rate',
        title = 'Fits of every model available in rTPC') +
   geom_hline(aes(yintercept = 0), linetype = 2)
+  ```
