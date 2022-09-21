@@ -1,6 +1,6 @@
 ## Analysis of thermal curves
 
-### Preparing data for analysis
+# Preparing data for analysis
 ```
 library(rTPC)
 library(devtools)
