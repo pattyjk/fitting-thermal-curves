@@ -2,12 +2,21 @@
 
 ### Install rTPC package
 ```
-download and install devtools executable from CRAN
-Run install.packages("devtools") in R
+#download and install devtools executable from CRAN
+#Run install.packages("devtools") in R
+
+#install other packages
+install.packages("nls.multstart")
+install.packages("broom")
+install.packages("tidyverse")
+install.packages("readr")
+install.packages("ggplot2")
+install.packages("dplyr")
+install.packages("devtools")
+
+#install rTPC
 library(devtools)
 install_github("padpadpadpad/rTPC")
-
-Should work if R >4.2
 ```
 
 ### Preparing data for analysis
