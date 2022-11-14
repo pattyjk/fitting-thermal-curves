@@ -55,16 +55,16 @@
 
 # Put your job commands here, including loading any needed
 # modules or diagnostic echos.
-module load r-4.0.3-gcc-10.2.0-ppdhqzq
+module load r-4.0.2-gcc-9.3.0-agrxgnh
 Rscript install_packages.R
 # this job simply reports the hostname and sleeps for two minutes
 
-echo "using $SLURM_CPUS_ON_NODE CPUs"
-echo `date`
+#echo "using $SLURM_CPUS_ON_NODE CPUs"
+#echo `date`
 
-hostname
-sleep 120
+#hostname
+#sleep 120
 
 # Diagnostic/Logging Information
-echo "Finish Run"
-echo "end time is `date`"
+#echo "Finish Run"
+#echo "end time is `date`"
