@@ -10,14 +10,13 @@
 #
 # set name of job
 #SBATCH --job-name=install_packages
-#
 # set the number of processors/tasks needed
 #SBATCH -n 1
 
 #set an account to use
 #if not used then default will be used
 # for scavenger users, use this format:
-#SBATCH --account=patrick.kearns@chimera.umb.edu
+##SBATCH --account=patrick.kearns@chimera.umb.edu
 # for contributing users, use this format:
 ##SBATCH --account=<deptname|lastname>
 
@@ -56,7 +55,7 @@
 
 # Put your job commands here, including loading any needed
 # modules or diagnostic echos.
-r-4.0.3-gcc-10.2.0-ppdhqzq
+module load r-4.0.3-gcc-10.2.0-ppdhqzq
 Rscript install_packages.R
 # this job simply reports the hostname and sleeps for two minutes
 
