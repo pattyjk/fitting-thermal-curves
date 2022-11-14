@@ -17,7 +17,7 @@
 #set an account to use
 #if not used then default will be used
 # for scavenger users, use this format:
-#SBATCH --account=patrick.kearns
+#SBATCH --account=patrick.kearns@chimera.umb.edu
 # for contributing users, use this format:
 ##SBATCH --account=<deptname|lastname>
 
