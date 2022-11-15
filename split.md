@@ -1,3 +1,4 @@
+```
 library(readr)
 library(rTPC)
 library(nls.multstart)
@@ -30,3 +31,4 @@ beta2012_param<-lapply(beta2012, function(x) calc_params(x))
 
 #save data
 save(beta2012_param, file = "beta2012_param.RData")
+```
