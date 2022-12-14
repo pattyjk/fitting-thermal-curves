@@ -40,6 +40,9 @@ Corkrey__data <- read_csv("C:/Users/patty/OneDrive/Desktop/Corkrey et al 2016 ra
 #raw data is rate min-1, need in hr-1
 Corkrey__data$rate <-Corkrey__data$rate.min*60
 
+#need to log transform to make models work (some rates are too small)
+Corkrey__data$rate <-abs(log(Corkrey__data$rate))
+
 # number of unique genus/species
 unique(Corkrey__data$binomial.name)
 #978
